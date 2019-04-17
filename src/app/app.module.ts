@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app.routes';
+import { AuthService } from './services/auth.service';
 
 
 import { AppComponent } from './app.component';
@@ -21,7 +22,9 @@ import { ProtegidaComponent } from './components/protegida/protegida.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
